@@ -1,0 +1,14 @@
+.banner {
+    background-color: blueviolet;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    width: 100%;
+}
+
+.banner-main-text {
+    font-size: 35px;
+    color: whitesmoke;
+    cursor: pointer;
+}
