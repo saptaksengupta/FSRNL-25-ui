@@ -3,7 +3,8 @@ import "./FsrnlInputStyles.css"
 
 export const INPUT_TYPES = {
     'INPUT_TXT': 'INPUT_TEXT',
-    'INPUT_PASSWORD': 'INPUT_PASSWORD'
+    'INPUT_PASSWORD': 'INPUT_PASSWORD',
+    'INPUT_TXT_AREA': 'INPUT_TXT_AREA'
 };
 
 const FsrnlInput = ({ type, style, placeholder, onChangeCb }) => {
@@ -34,6 +35,17 @@ const FsrnlInput = ({ type, style, placeholder, onChangeCb }) => {
                         onChange={onChangeCallBackHandler} 
                     />);
                 break;
+            case INPUT_TYPES.INPUT_TXT_AREA: 
+                    inputJsx = (
+                        <textarea 
+                            style={{...style}}
+                            placeholder={placeholder}
+                            onChange={onChangeCallBackHandler}
+                            rows={4} 
+                            cols={40}
+                        />
+                    );
+                    break;
             default:
                 inputJsx = null;
         }

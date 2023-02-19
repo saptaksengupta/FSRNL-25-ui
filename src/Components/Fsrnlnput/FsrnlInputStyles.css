@@ -5,7 +5,7 @@
     margin-bottom: 5px;
 }
 
-.fsrnl-input-container > input{
+.fsrnl-input-container > input, textarea{
     padding: 10px;
     border-radius: 10px;
 }

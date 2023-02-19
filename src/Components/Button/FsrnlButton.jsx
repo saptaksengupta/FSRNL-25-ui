@@ -1,7 +1,7 @@
 import React from "react";
 import "./ButtonStyles.css";
 
-const FsrnlButton = ({text, onClickCb}) => {
+const FsrnlButton = ({text, onClickCb, style}) => {
 
     const onClickCbHandler = () => {
         if (!onClickCb) {
@@ -12,7 +12,7 @@ const FsrnlButton = ({text, onClickCb}) => {
     }
 
     return (
-        <button className="btn" onClick={onClickCbHandler}> {text} </button>
+        <button className="btn" style={{...style}} onClick={onClickCbHandler}> {text} </button>
     )
 }
 
