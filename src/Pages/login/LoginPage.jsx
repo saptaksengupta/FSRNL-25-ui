@@ -16,10 +16,10 @@ const LoginPage = () => {
     const [passErr, setPassErr] = useState(false);
 
     const navigate = useNavigate();
-    if (getUserToken()) {
-        navigate('/dashboard');
-        return;
-    }
+    // if (getUserToken()) {
+    //     navigate('/dashboard');
+    //     return;
+    // }
 
     const onPhoneChanged = (value) => {
         setPhone(value);
