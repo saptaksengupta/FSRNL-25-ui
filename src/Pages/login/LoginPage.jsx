@@ -57,7 +57,7 @@ const LoginPage = () => {
 
     return (
         <div className="login-page-container">
-            <div className="banner"></div>
+            <div className="banner-login"></div>
             <div className="login-form-container">
                 <div>
                     <div>

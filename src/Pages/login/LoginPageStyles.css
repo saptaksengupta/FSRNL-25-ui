@@ -4,7 +4,7 @@
     height: 100vh;
 }
 
-.banner {
+.banner-login {
     flex: 1;
     background-color: blueviolet;
 }
