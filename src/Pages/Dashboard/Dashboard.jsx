@@ -50,6 +50,7 @@ const Dashboard = () => {
         <div>
             <div className="banner">
                 <div onClick={onBannerTxtClicked} className="banner-main-text">Hi, {user.userName}</div>
+                <div>Here are the list of blogs</div>
                 <div>
                     <FsrnlButton text={'Add Post'} style={{ backgroundColor: "orange" }} onClickCb={onPostAddBtnClicked} />
                 </div>
